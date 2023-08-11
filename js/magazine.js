@@ -267,7 +267,8 @@ function resizeViewport() {
 		$('.thumbnails').css({height:1});
 	} else {
 		$('.thumbnails').css({height: boundH});
-		$('.thumbnails > div').css({marginTop: marginTop});
+		$('.thumbnails > div').css({marginTop: 5});
+		// $('.thumbnails > div').css({marginTop: marginTop});
 	}
 
 	if (magazineOffset.top<$('.made').height())

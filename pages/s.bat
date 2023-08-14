@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 set "start_num=1"
-set "end_num=100"
+set "end_num=268"
 set "cero=0"
 
 for /L %%i in (%start_num%,1,%end_num%) do (
@@ -14,7 +14,12 @@ for /L %%i in (%start_num%,1,%end_num%) do (
 
     if %%i lss 10 set "padded_num=00%%i"
     if %%i geq 10 if %%i lss 100 set "padded_num=0%%i"
-    ren "!num!-thumb.jpg" "!num!-large.jpg"
-    @echo "!num!.jpg"
-) 
-pause 
+
+
+    @REM @echo !cero! 
+    @REM @echo !padded_num!
+
+    ren "!cero!-min.jpg" "!cero!.jpg"
+    @REM @echo "1-100_page-00!cero!.jpg"
+)
+pause

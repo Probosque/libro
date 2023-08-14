@@ -29,31 +29,45 @@
 		<!-- Thumbnails -->
 		<div class="thumbnails">
 			<div>
+
 				<div style="align-items: flex-end; display: flex; justify-content: center;">
-					<div style="cursor: pointer;" onclick="$('.magazine').turn('previous'); e.preventDefault();">⬅️</div>
-					&nbsp;
+					<button class="btn-green btn-green-l" onclick="$('.magazine').turn('previous'); e.preventDefault();">◄ anterior</button>
 					<input type="number" id="nu" onchange="$('.magazine').turn('page', $('#nu').val());" min="1" max="268">
-					<div style="cursor: pointer;" onclick="$('.magazine').turn('next'); e.preventDefault();">➡️</div> 
+					<button class="btn-green btn-green-r" onclick="$('.magazine').turn('next'); e.preventDefault();">siguiente ►</button> 
 				</div>
 
 				<ul>
 					<li class="i">
-						<img src="pages/1-thumb.jpg" width="76" height="50" class="page-1" oninput="$('#nu').value();">
-						<span>1</span>
+						<img src="pages/8-thumb.jpg" width="76" height="50" class="page-8" oninput="$('#nu').value();">
+						<span>Contenido</span>
 					</li>
 					<li class="d">
-						<img src="pages/90-thumb.jpg" width="76" height="50" class="page-90">
-						<span>90</span>
+						<img src="pages/21-thumb.jpg" width="76" height="50" class="page-21">
+						<span>Capítulo 1</span>
 					</li>
 					<li class="d">
-						<img src="pages/180-thumb.jpg" width="76" height="50" class="page-180">
-						<span>180</span>
+						<img src="pages/55-thumb.jpg" width="76" height="50" class="page-55">
+						<span>Capítulo 2</span>
+					</li>
+					<li class="d">
+						<img src="pages/75-thumb.jpg" width="76" height="50" class="page-75">
+						<span>Capítulo 3</span>
+					</li>
+					<li class="d">
+						<img src="pages/199-thumb.jpg" width="76" height="50" class="page-199">
+						<span>Capítulo 4</span>
+					</li>
+					<li class="d">
+						<img src="pages/231-thumb.jpg" width="76" height="50" class="page-231">
+						<span>Capítulo 5</span>
 					</li>
 					<li class="i">
-						<img src="pages/268-thumb.jpg" width="76" height="50" class="page-268">
-						<span>268</span>
+						<img src="pages/245-thumb.jpg" width="76" height="50" class="page-245">
+						<span>Capítulo 6</span>
 					</li>
 				</ul>
+
+
 			</div>
 
 		</div>

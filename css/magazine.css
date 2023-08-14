@@ -383,3 +383,26 @@ body{
 	bottom:0;
 	width:100%;
 }
+
+.btn-green {
+	cursor: pointer;
+	background-color: #088404;
+	border: none;
+	color: white;
+	padding: 0px 5px 2px 0px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.btn-green-l {
+	padding: 1px 10px 2px 10px;
+}
+.btn-green-r {
+	padding: 1px 5px 2px 5px;
+}
+
+#nu {
+	text-align: center;
+}
